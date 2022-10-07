@@ -8,7 +8,7 @@ export const getStaticProps = () => ({
   },
 });
 
-export default function Home({ message }) {
+export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,7 +24,10 @@ export default function Home({ message }) {
           </Link>
           !
         </h1>
-        <p>{message.toUpperCase()}</p>
+        <div>
+          <h4>Page props:</h4>
+          <pre>{JSON.stringify(props, null, 2)}</pre>
+        </div>
       </main>
     </div>
   );
