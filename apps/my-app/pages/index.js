@@ -24,7 +24,7 @@ export default function Home({ message }) {
           </Link>
           !
         </h1>
-        <p>{message}</p>
+        <p>{message.toUpperCase()}</p>
       </main>
     </div>
   );
