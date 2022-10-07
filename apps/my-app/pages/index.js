@@ -2,7 +2,13 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
-export default function Home() {
+export const getStaticProps = () => ({
+  props: {
+    message: 'This message came from getStaticProps.',
+  },
+});
+
+export default function Home({ message }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -18,6 +24,7 @@ export default function Home() {
           </Link>
           !
         </h1>
+        <p>{message}</p>
       </main>
     </div>
   );
