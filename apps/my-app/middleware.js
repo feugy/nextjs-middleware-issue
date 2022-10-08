@@ -8,3 +8,7 @@ export default async (req) => {
   }
   return NextResponse.next();
 };
+
+export const config = {
+  matcher: ['/((?!_next|api|favicon.ico).*)'],
+};
