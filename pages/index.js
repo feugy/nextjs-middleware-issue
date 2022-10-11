@@ -13,7 +13,7 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>My App - index.js</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/my-app/favicon.ico' />
       </Head>
 
       <main className={styles.main}>
