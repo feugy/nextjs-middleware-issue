@@ -18,19 +18,13 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to{' '}
-          <Link href='/page'>
-            <a>My Page</a>
-          </Link>
-          !
+          Welcome to <Link href='/page'>My Page</Link>!
         </h1>
         <div>
           <h4>Page props:</h4>
           <pre>{JSON.stringify(props, null, 2)}</pre>
         </div>
-        <Link href='/'>
-          <a>My App</a>
-        </Link>
+        <Link href='/'>My App</Link>
       </main>
     </div>
   );
