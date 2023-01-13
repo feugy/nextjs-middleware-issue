@@ -13,18 +13,15 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>My App - page.js</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <Link href='/page'>My Page</Link>!
-        </h1>
         <div>
           <h4>Page props:</h4>
           <pre>{JSON.stringify(props, null, 2)}</pre>
         </div>
-        <Link href='/'>My App</Link>
+        <Link href="/">Go to /</Link>
       </main>
     </div>
   );
